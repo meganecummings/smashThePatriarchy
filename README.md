@@ -1,4 +1,4 @@
-# smashThePatriarchy
+# Smash The Patriarchy Game
 ## Project #0 
 
 ### Requirements
@@ -22,3 +22,6 @@ As is, I was unable to get the highScore functionality to work for the game. I'm
 ![IMG_5250](https://user-images.githubusercontent.com/50630051/60798975-16cf6d80-a127-11e9-96ca-59beaa770275.jpg)
 
 ## User Stories
+![IMG_5251](https://user-images.githubusercontent.com/50630051/60799189-8ba2a780-a127-11e9-87a0-f0ed1fbb6cc0.jpg)
+![IMG_5252](https://user-images.githubusercontent.com/50630051/60799190-8ba2a780-a127-11e9-93d4-3cedbeab6176.jpg)
+![IMG_5253](https://user-images.githubusercontent.com/50630051/60799191-8ba2a780-a127-11e9-90e1-952cadbfbb83.jpg)
