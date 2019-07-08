@@ -17,107 +17,107 @@ const playingCards = [
         name: 'momChanging',
         type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/momChanging.png',
-    }, 
+    },
     {
         name: 'tennisQuestions',
         type: 'patriarchy',
-        cardImage: 'assets/patriarchyCards/tennis_outfit.jpeg', 
+        cardImage: 'assets/patriarchyCards/tennis_outfit.jpeg',
     },
-      {
+    {
         name: 'beachBody',
         type: 'patriarchy',
-        cardImage: 'assets/patriarchyCards/beachBody.png', 
-    }, 
+        cardImage: 'assets/patriarchyCards/beachBody.png',
+    },
     {
         name: 'naughtyLeopard',
         type: 'patriarchy',
-        cardImage: 'assets/patriarchyCards/naughtyleopard.jpeg', 
+        cardImage: 'assets/patriarchyCards/naughtyleopard.jpeg',
     },
     {
         name: 'yorkiecandy',
         type: 'patriarchy',
-        cardImage: 'assets/patriarchyCards/yorkieCandy.png', 
-    }, 
+        cardImage: 'assets/patriarchyCards/yorkieCandy.png',
+    },
     {
         name: 'trumpHooters',
         type: 'patriarchy',
-        cardImage: 'assets/patriarchyCards/trumpHooters.png', 
-    }, 
+        cardImage: 'assets/patriarchyCards/trumpHooters.png',
+    },
     {
         name: 'manPresents',
         type: 'patriarchy',
-        cardImage: 'assets/patriarchyCards/man_presents.png', 
-    }, 
+        cardImage: 'assets/patriarchyCards/man_presents.png',
+    },
     {
         name: 'misspacman',
         type: 'patriarchy',
-        cardImage: 'assets/patriarchyCards/mrspacman.png', 
-    }, 
+        cardImage: 'assets/patriarchyCards/mrspacman.png',
+    },
     {
         name: 'femaleshopper',
         type: 'patriarchy',
-        cardImage: 'assets/patriarchyCards/femaleshopper.png', 
-    }, 
+        cardImage: 'assets/patriarchyCards/femaleshopper.png',
+    },
     {
         name: 'siriNotSexist',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/siriNotSexist.jpeg', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/siriNotSexist.jpeg',
+    },
     {
         name: 'sushiRolls',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/sushiRolls.jpeg', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/sushiRolls.jpeg',
+    },
     {
         name: 'allGender',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/allGender.jpeg', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/allGender.jpeg',
+    },
     {
         name: 'endPatriarchy',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/endPatriarchy.jpeg', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/endPatriarchy.jpeg',
+    },
     {
         name: 'beachBody',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/beachBody.png', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/beachBody.png',
+    },
     {
         name: 'firefighter',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/firefighternurse.png', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/firefighternurse.png',
+    },
     {
         name: 'boycook',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/boycook.png', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/boycook.png',
+    },
     {
         name: 'barbies',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/barbie.png', 
+        cardImage: 'assets/notPatriarchyCards/barbie.png',
     },
     {
         name: 'nothot',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/hotnot.png', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/hotnot.png',
+    },
     {
         name: 'laundry',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/laundry.png', 
-    },  
+        cardImage: 'assets/notPatriarchyCards/laundry.png',
+    },
     {
         name: 'girlhandy',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/girlhandy.png', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/girlhandy.png',
+    },
     {
         name: 'femaleathlete',
         type: 'notPatriarchy',
-        cardImage: 'assets/notPatriarchyCards/femaleathlete.png', 
-    }, 
+        cardImage: 'assets/notPatriarchyCards/femaleathlete.png',
+    },
 ]
 
 // ------------------------- STATE VARIABLES ------------------------- // 
@@ -146,7 +146,7 @@ const $buttonStart = $('#startBtn');
 // Button to Move to Game Start Screen
 const $btnToGame = $('#btnToGame');
 // Button to Move to Instructions Screen
-const $btnToInstruct = $('#btnToInstruct'); 
+const $btnToInstruct = $('#btnToInstruct');
 // Track Names from Name Form
 let $name = $('#nameForm');
 // Button to Move to Next Round
@@ -158,17 +158,17 @@ const $playAgainBtn = $('#playAgainBtn');
 const createCards = numberOfCards => {
     console.log('Make game!', numberOfCards);
     // create cards variable from class squares
-    
+
     const $cards = $('.cards');
     // for loop through #of Cards...
     for (let i = 0; i <= numberOfCards; i++) {
-    // to create a individual card variable (container for cards)
+        // to create a individual card variable (container for cards)
         const $card = $('<div/>');
-    // add class to the card...
+        // add class to the card...
         $card.addClass('card');
-    // trigger functions for card selection
-        $card.css('background-image', applyRandomCard());    
-    // add cards to container! 
+        // trigger functions for card selection
+        $card.css('background-image', applyRandomCard());
+        // add cards to container! 
         $cards.append($card);
     };
     $('.cards').show();
@@ -230,7 +230,7 @@ const setTimer = () => {
                 $('#cardContainer').hide();
                 $('.cards').hide();
                 $('.options').show();
-                };
+            };
             if (time <= 0) {
                 clearInterval(timer);
             };
@@ -251,7 +251,7 @@ const setTimer = () => {
 
 // Build outcome for clicking on target card and cueing check of patriarchy type. 
 const handleClick = event => {
-    $(event.target).css('opacity',0.3);
+    $(event.target).css('opacity', 0.3);
     const type = $(event.target).css('background-image');
     checkValidClick(type);
 };
