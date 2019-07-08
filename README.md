@@ -16,6 +16,9 @@ Simply access from gitHub to click through to the Instructions screen for inform
 ## Unsolved Problems
 As is, I was unable to get the highScore functionality to work for the game. I'm hoping to add this soon! 
 
-## WireFrames are available in Assets Section under 'WireFrames' Folder
+## WireFrames
+![IMG_5248](https://user-images.githubusercontent.com/50630051/60798976-16cf6d80-a127-11e9-98ca-904e60890351.jpg)
+![IMG_5249](https://user-images.githubusercontent.com/50630051/60798974-16cf6d80-a127-11e9-8959-88c4f07b1548.jpg)
+![IMG_5250](https://user-images.githubusercontent.com/50630051/60798975-16cf6d80-a127-11e9-96ca-59beaa770275.jpg)
 
-## User Stories are available in Assets Section under 'User Stories' Folder
+## User Stories
