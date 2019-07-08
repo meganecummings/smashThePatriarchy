@@ -1,0 +1,72 @@
+//Smash the Patriarchy Game
+
+// Set up file formats (html, js, css)
+    // Build Intro Screen
+    // HTML content for Intro
+    // Build Start Game Button!
+
+// Build Timer
+
+// Build scorecard 
+    // Show Round  
+    // Show Points
+
+// Build Card Pool 
+    // Images of Patriarchy
+    // Neutral Images
+
+// Build Player
+
+// Build Game Function
+    // RandomPick();
+
+// GAME PLAY
+
+// Event Listener: When User clicks Start Game Button... 
+    // calls Game Init();
+
+//Game Init();
+    // Game starts with 6 cards showing back images. 
+    // Score = 0;
+    // Round = 1;
+    // call Round Init();
+
+// Round Init();
+        // Timer starts. gameTime = X, depending on Round #.
+            // if Round = 1, gameTime = 30 seconds;
+            // if Round = 2, gameTime = 20 seconds;
+            // if Round = 3, gameTime = 10 seconds;
+            // if Round = 4, gameTime = 5 seconds;
+            // if Round = 5, gameTime = 2 seconds;
+
+        //All cards change image. 
+            // 1/2 of cards = Patriarchy image 
+            // 1/2 of cards = Non-patriarchy image
+            // Order/Position is randomly selected from Patriarchy Images & Non-Patriarchy Images
+
+        // If user clicks on PatriarchyCard..
+            // score++
+        // If user clicks on Non-PatriarchyCard...
+            // score --
+
+        // Timer continues in set interval until timesUp (gameTime = 0). 
+            // @ timesUp...
+                // Scorecard appears
+                // If Round <= 5... 
+                    // Prompt Appears to User with Options ... 
+                        // Quit Game 
+                            // Game Over Message 'You game up. The patriarchy lives.'
+                        // Start Over
+                            // Start over message 'The patriarchy doesn't stand a chance - fight on!'
+                            // game Init();
+                        // Continue Game 
+                            // if Round = 5, alert 'you stuck in there and smashed the patriarchy! Congratulations!'
+                            // else 
+                                // Round ++ 
+                                // Round init();
+
+
+
+
+
+

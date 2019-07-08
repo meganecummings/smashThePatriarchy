@@ -1,0 +1,84 @@
+body {
+    background-color: paleturquoise;
+    margin-top: 5em;
+    justify-content: center;
+}
+
+.header {
+    display: inline-block;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    text-align: center;
+}
+
+.button {
+    width: 10em;
+    float: center;
+    margin-top: 2%;
+}
+
+
+.instructHeader, .gameQuit, .gameWin, .options, #mainHeader {
+    display: none;
+}
+  
+
+.h1Heading {
+    /* here is the heading for game start & Game play  */
+}
+
+.gameQuit {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.gameStart {
+    margin-left: 5em;
+}
+
+#mainHeader {
+    position: fixed;
+    top: 0;
+    padding: 10px 16px;
+    width: 100%;   
+    background-color: paleturquoise;
+}
+
+.cards div {
+    width: 15em;
+    height: 15em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 1%;
+    margin-top: 1%;
+    display: inline-block;
+  }
+
+#cardsContainer {
+      margin-top: 110px;
+  }
+
+.options {
+    margin-top: 20px;
+    margin-left: 2em;
+    margin-right: 2em;
+    align-content: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
