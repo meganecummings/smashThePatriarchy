@@ -1,7 +1,7 @@
 body {
-    background-color: paleturquoise;
+    background-image: url('../assets/background.image.jpg');
     margin-top: 5em;
-    justify-content: center;
+    color: white;
 }
 
 .header {
@@ -21,7 +21,7 @@ body {
 }
 
 
-.instructHeader, .gameQuit, .gameWin, .options, #mainHeader {
+.instructHeader, .highScorePage, .gameQuit, .gameWin, .options, #mainHeader {
     display: none;
 }
   
@@ -79,6 +79,12 @@ body {
 
 .row {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
+
+iframe {
+    display: block;
+    margin: 2em auto;
+ }
+

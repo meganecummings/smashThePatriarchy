@@ -127,7 +127,7 @@ let time = 20;
 let round = 1;
 let score = 0;
 let highScore;
-let $localStorageName = $('#name').val();
+const $nameForm = $('#nameForm').val();
 
 // ------------------------- CACHED DOM ELEMENTS ------------------------- // 
 
@@ -139,6 +139,8 @@ let $playerScore = $('.playerScore');
 const $btnQuit = $('#quitBtn');
 // Quit Button to Move to Quit Screen on Header
 const $buttonQuit = $('#quitButton');
+//Start Button Const Variable
+const $highScorePage = $('#highScore');
 //Start Button Const Variable
 const $buttonStart = $('#startBtn');
 // Button to Move to Game Start Screen
@@ -156,6 +158,7 @@ const $playAgainBtn = $('#playAgainBtn');
 const createCards = numberOfCards => {
     console.log('Make game!', numberOfCards);
     // create cards variable from class squares
+    
     const $cards = $('.cards');
     // for loop through #of Cards...
     for (let i = 0; i <= numberOfCards; i++) {
@@ -168,6 +171,8 @@ const createCards = numberOfCards => {
     // add cards to container! 
         $cards.append($card);
     };
+    $('.cards').show();
+
 };
 
 const applyRandomCard = () => {
@@ -175,37 +180,37 @@ const applyRandomCard = () => {
     return `url(${playingCards[index].cardImage})`;
 }
 
-// HIGH SCORE SHEET from phaserjs.com
-function createHighScore(event) {
-    event.preventDefault();
-    const $nameInput = $('#name').val();
-    const newName = {id: new Date().getTime(), name: $nameInput, score: score};
-    render(newName, $name);
-    highScore = Math.max(score, highScore);
-    localStorage.setItem(localStorageName, highScore);
+// // HIGH SCORE SHEET from phaserjs.com
+// function createHighScore(event) {
+//     event.preventDefault();
+//     const newName = {id: new Date().getTime(), name: $nameInput, score: score};
+//     console.log(newName);
+//     render(newName, $name);
+//     highScore = Math.max(score, highScore);
+//     localStorage.setItem(localStorageName, highScore);
 
-}
+// }
 
-function getNameTemplate(name) {
-    if (score > localStorage.getItem('highScore')) {
-        localStorage.setItem('highScore', score);
-    };
-    return `
-    <div class="col-md-3 offset-md-1 p-4 mb-4 bg-dark text-light" id="highScores">
-    <button data-todoid=${name.id} class='btn btn-sm btn-danger delete-todo float-right'>&times;</button>
-    <h4>${name.name}</h4>
-    <p>${name.score}</p>
-    </div>
-    `
-}
+// function getNameTemplate(name) {
+//     if (score > localStorage.getItem('highScore')) {
+//         localStorage.setItem('highScore', score);
+//     };
+//     return `
+//     <div class="col-md-3 offset-md-1 p-4 mb-4 bg-dark text-light" id="highScores">
+//     <button data-nameid=${name.id} class='btn btn-sm btn-danger delete-name float-right'>&times;</button>
+//     <h4>${name.name}</h4>
+//     <p>${name.score}</p>
+//     </div>
+//     `
+// }
 
-function render(dataObj, domElement) {
-    // first make a request to get a template, then cache it
-    // this getHighScore Template will return us a template string with all the data included in it
-    const template = getHighScoreTemplate(dataObj); 
-    // now lets append to the domElement!
-    domElement.append(template);
-}
+// function render(dataObj, domElement) {
+//     // first make a request to get a template, then cache it
+//     // this getHighScore Template will return us a template string with all the data included in it
+//     const template = getHighScoreTemplate(dataObj); 
+//     // now lets append to the domElement!
+//     domElement.append(template);
+// }
 
 const gameInit = () => {
     // Game starts with 6 cards showing back images. 
@@ -223,6 +228,7 @@ const setTimer = () => {
                 $('.gameStart').empty();
                 $('#mainHeader').hide();
                 $('#cardContainer').hide();
+                $('.cards').hide();
                 $('.options').show();
                 };
             if (time <= 0) {
@@ -335,6 +341,7 @@ $btnQuit.on('click', () => {
     $('.gameStart').empty();
     $('.cards').empty();
     $('#mainHeader').empty();
+    $('.options').empty();
     $('.gameQuit').show();
 })
 
@@ -348,11 +355,20 @@ $buttonQuit.on('click', () => {
     $('.gameQuit').show();
 })
 
+// Quit Button Click to Quit Screen
+$highScorePage.on('click', () => {
+    $('.gameStart').empty();
+    $('.cards').empty();
+    $('.options').empty();
+    $('#mainHeader').empty();
+    $('.highScorePage').show();
+})
+
 //Event listener for Clicking on the Cards
 $('.cards').on('click', '.card', event => {
     handleClick(event);
 }
 );
 
-
+// $nameForm.on('submit', createHighScore());
 

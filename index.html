@@ -36,16 +36,20 @@
                 <h2 class='mb-2'>Here's how you play Smash the Patriarchy</h2>
                 <h4 class='mb-2'>Instructions</h4>
                 <ul>
-                    <li>The goal of the game is to click on as many images of the patriarchy as you can in the alloted amount of time for each round.</li>
+                    <li>Welcome to 'Smash the Patriarchy' Game! This is a game that allows the user to help reduce the patriarchy in our society by clicking away Images or Icons that represent the oppressive control of our Patriarchy. By clicking or 'smashing' the patriarchy images, users are one step closer to smashing the patriarchy.</li>
+                    <li>The goal of the game is to click on as many images that signify patriarchy as you can in the alloted amount of time for each round. Go on to the next round to continue the fight and beat the game.</li>
                     <li>For each image of patriarchy that you click on, you will get 1 point added to your score.</li>
                     <li>If you click on images that are neutral or progressive, then you will lose 1 point.</li>
                 </ul>
                 <p class="instructions"></p>
                 <form id="nameForm">
-                    <div class="form-group">
-                        <label for="title">Input Your Name</label>
-                        <input type="text" id="name" name="title" placeholder="Type Your Name Here!">
-                    </div>
+                    <!-- <div class="container">
+                        <div class="form-group">
+                            <label for="title">Input Your Name</label>
+                            <input type="text" id="name" name="title" placeholder="Type Your Name Here!">
+                            <input type="submit" class="btn btn-sm btn-block btn-info float-right" value="Track My Score" />
+                        </div>
+                    </div> -->
                     <button type=submit class="btn btn-sm btn-block btn-info float-right" id='btnToGame'>Let's Smash the Patriarchy -- Begin Game!</button>
                 </form>
             </div>
@@ -63,6 +67,11 @@
                 <div class="card mb-4 shadow-sm">
                     <div class="card-quit">
                         <button type="button" class="btn btn-sm btn-block btn-outline-info" id="quitBtn">Quit</button>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-highScores">
+                        <button type="button" id="highScore" class="btn btn-sm btn-block btn-outline-info">High Scores</button>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
@@ -89,9 +98,14 @@
         <iframe src="https://giphy.com/embed/1NIVcN2F6MeVW" width="480" height="360" frameBorder="0" class="giphy-embed center-block" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/man-1NIVcN2F6MeVW"></a></p>
     </section>
 
+    <section class="highScorePage">
+        <h1>These are the High Scores!</h1>
+        <Div class="highScores"></Div>
+    </section>
+
     <section class="gameWin mt-4">
         <h1>Congratulations - You've stuck in there and defeated the patriarchy! We all win!</h1>
-        <iframe src="https://giphy.com/embed/3o85xKPAEDCuXxRepO" width="400" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/feminism-wonder-woman-patriarchy-3o85xKPAEDCuXxRepO"></a></p>        
+        <iframe src="https://giphy.com/embed/3o85xKPAEDCuXxRepO" width="400" height="480" frameBorder="0" id="winGif" class="giphy-embed center-block" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/feminism-wonder-woman-patriarchy-3o85xKPAEDCuXxRepO"></a></p>  
     </section>
 
     <section class="options">
@@ -112,9 +126,6 @@
 <div class="container" id="cardsContainer">
      <div class="cards"></div>
 </div>
-
-<div class="highScore"></div>
-<div class="playerScore"></div>
 
 <!-- jQuery JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
