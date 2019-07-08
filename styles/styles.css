@@ -1,7 +1,7 @@
 body {
-    background-image: url('../assets/background.image.jpg');
+    background-color: wheat;
     margin-top: 5em;
-    color: white;
+    color: #686261;
 }
 
 .header {
@@ -53,7 +53,7 @@ body {
     top: 0;
     padding: 10px 16px;
     width: 100%;   
-    background-color: paleturquoise;
+    background-color: wheat;
 }
 
 .cards div {
