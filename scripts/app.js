@@ -281,10 +281,10 @@ const setUpRound = timer => {
     $('#round').text(`Round: ${round}`);
     if (round === 1) {
         createCards(40);
-        time = 5;
+        time = 20;
     } else if (round === 2) {
         createCards(40);
-        time = 5;
+        time = 10;
     } else if (round === 3) {
         createCards(40);
         time = 5;
