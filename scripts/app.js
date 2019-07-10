@@ -1,121 +1,72 @@
-console.log('SMASH IT');
-
 // ------------------------- CONSTANTS ------------------------- // 
-
 const playingCards = [
     {
-        name: 'sexistAlexa',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/sexistAlexa.png',
     },
     {
-        name: 'sexistScarlett',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/scarlettGoogle.png',
     },
     {
-        name: 'momChanging',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/momChanging.png',
     },
     {
-        name: 'tennisQuestions',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/tennis_outfit.jpeg',
     },
     {
-        name: 'beachBody',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/beachBody.png',
     },
     {
-        name: 'naughtyLeopard',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/naughtyleopard.jpeg',
     },
     {
-        name: 'yorkiecandy',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/yorkieCandy.png',
     },
     {
-        name: 'trumpHooters',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/trumpHooters.png',
     },
     {
-        name: 'manPresents',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/man_presents.png',
     },
     {
-        name: 'misspacman',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/mrspacman.png',
     },
     {
-        name: 'femaleshopper',
-        type: 'patriarchy',
         cardImage: 'assets/patriarchyCards/femaleshopper.png',
     },
     {
-        name: 'siriNotSexist',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/siriNotSexist.jpeg',
     },
     {
-        name: 'sushiRolls',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/sushiRolls.jpeg',
     },
     {
-        name: 'allGender',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/allGender.jpeg',
     },
     {
-        name: 'endPatriarchy',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/endPatriarchy.jpeg',
     },
     {
-        name: 'beachBody',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/beachBody.png',
     },
     {
-        name: 'firefighter',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/firefighternurse.png',
     },
     {
-        name: 'boycook',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/boycook.png',
     },
     {
-        name: 'barbies',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/barbie.png',
     },
     {
-        name: 'nothot',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/hotnot.png',
     },
     {
-        name: 'laundry',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/laundry.png',
     },
     {
-        name: 'girlhandy',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/girlhandy.png',
     },
     {
-        name: 'femaleathlete',
-        type: 'notPatriarchy',
         cardImage: 'assets/notPatriarchyCards/femaleathlete.png',
     },
 ]
